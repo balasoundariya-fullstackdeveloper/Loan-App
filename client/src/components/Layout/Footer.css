@@ -1,0 +1,27 @@
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: #ffffff; /* Light text */
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 0.5rem;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  }
+  

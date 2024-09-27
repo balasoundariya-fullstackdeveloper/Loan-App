@@ -1,0 +1,19 @@
+/* DeleteConfirmation.css */
+@media (max-width: 600px) {
+    .ant-modal {
+      width: 90% !important; /* Make the modal take up 90% of the screen width on small devices */
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .ant-modal {
+      width: 70% !important; /* Make the modal take up 70% of the screen width on medium devices */
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .ant-modal {
+      width: 50% !important; /* Make the modal take up 50% of the screen width on large devices */
+    }
+  }
+  

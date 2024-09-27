@@ -1,0 +1,32 @@
+
+/* Responsive HomePage.css*/
+/* HomePage.css */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .filters div {
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    overflow: auto;
+    max-height: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+    }
+  
+    .filters div {
+      width: 100%;
+    }
+  
+    .content {
+      max-height: none;
+    }
+  }

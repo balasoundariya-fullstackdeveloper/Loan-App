@@ -1,0 +1,26 @@
+/* Layout.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .content {
+      padding: 20px;
+    }
+  }
+  

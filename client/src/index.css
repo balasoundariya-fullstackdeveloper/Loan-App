@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.content {
+  height: 80vh;
+}
+.navbar {
+  background-color: rgb(113, 156, 235) !important;
+}
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  background-color: rgb(228, 169, 228) !important;
+}
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(228, 169, 228) !important;
+}
+.register-container{
+ padding: 50px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width:30%;
+}
+.register-container h1{
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 50%; 
+  margin: auto;
+}
+
+.login-form {
+  flex: 1;
+  padding: 40px;
+}
+
+.login-form h1 {
+  margin-bottom: 24px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.login-form .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.login-form .d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form .btn {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.login-form .btn:hover {
+  background-color: #40a9ff;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+/* header responsive*/
+@media (max-width: 768px) {
+  .navbar-brand h3 {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+  }
+}
+
+
