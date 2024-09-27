@@ -13,7 +13,7 @@ const Login = () => {
   const submitHandler = async (values) => {
     try {
       setLoading(true);
-      const { data } = await axios.post("http://localhost:3000/api/v1/users/login", values);
+      const { data } = await axios.post("https://loan-app-gmes.onrender.com/api/v1/users/login", values);
       setLoading(false);
       message.success("Login Successful");
       localStorage.setItem("user", JSON.stringify({ ...data.user, password: "" }));

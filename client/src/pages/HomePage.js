@@ -77,7 +77,7 @@ const HomePage = () => {
       try {
         const user = JSON.parse(localStorage.getItem("user"));
         setLoading(true);
-        const res = await axios.post("http://localhost:3000/api/v1/transactions/get-transaction", {
+        const res = await axios.post("https://loan-app-gmes.onrender.com/api/v1/transactions/get-transaction", {
           userid: user._id,
           frequency,
           selectedDate,
@@ -99,14 +99,14 @@ const HomePage = () => {
       const user = JSON.parse(localStorage.getItem("user"));
       setLoading(true);
       if (editable) {
-        await axios.post("http://localhost:3000/api/v1/transactions/edit-transaction", {
+        await axios.post("https://loan-app-gmes.onrender.com/api/v1/transactions/edit-transaction", {
           payload: { ...values, userId: user._id, image: imageUrl }, // Include image URL
           transactionId: editable._id,
         });
         setLoading(false);
         message.success("Loan Transaction Details Updated Successfully");
       } else {
-        await axios.post("http://localhost:3000/api/v1/transactions/add-transaction", {
+        await axios.post("https://loan-app-gmes.onrender.com/api/v1/transactions/add-transaction", {
           ...values,
           userid: user._id,
           image: imageUrl, // Include image URL
@@ -126,7 +126,7 @@ const HomePage = () => {
   const handleDelete = async () => {
     try {
       setLoading(true);
-      await axios.post("http://localhost:3000/api/v1/transactions/delete-transaction", {
+      await axios.post("https://loan-app-gmes.onrender.com/api/v1/transactions/delete-transaction", {
         transactionId: recordToDelete._id,
       });
       setLoading(false);
